@@ -10,7 +10,10 @@ Initial setup needed on host machine.
 > NOTE: You need to logout and login to  make group affective.
 
 ## Step 2: Run selenium instance
-* docker run -ti -v /PATH_OF_MOODLE_ON_HOST:/moodle rajeshtaneja/selenium:2.53.0 {PROFILENAME}
+```sh
+docker run -ti -v /PATH_OF_MOODLE_ON_HOST:/moodle rajeshtaneja/selenium:2.53.0 {PROFILENAME}
+```
+
 > NOTE: Map moodle folder on host to /moodle in selenium docker instance so @_file_upload can work.
 
 ## Profile names supported
