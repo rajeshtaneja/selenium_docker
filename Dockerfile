@@ -43,12 +43,12 @@ RUN ln -s /behatdrivers/chromedriver /bin/chromedriver
 
 
 RUN  mkdir -p /opt/selenium \
-  && wget --no-verbose https://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.0.jar -O /opt/selenium/selenium-server-standalone.jar
+  && wget --no-verbose https://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.1.jar -O /opt/selenium/selenium-server-standalone.jar
 
 # Use older version of firefox.
-RUN wget --no-verbose https://ftp.mozilla.org/pub/firefox/releases/46.0.1/linux-x86_64/en-US/firefox-46.0.1.tar.bz2 -O /opt/firefox-46.tar.bz2 \
+RUN wget --no-verbose https://ftp.mozilla.org/pub/firefox/releases/47.0.1/linux-x86_64/en-US/firefox-47.0.1.tar.bz2 -O /opt/firefox-47.tar.bz2 \
   && cd /opt \
-  && tar -xvf /opt/firefox-46.tar.bz2 \
+  && tar -xvf /opt/firefox-47.tar.bz2 \
   && rm /usr/bin/firefox \
   && ln -s /opt/firefox/firefox /usr/bin/firefox
 
